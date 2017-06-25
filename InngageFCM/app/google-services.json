@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "838355191326",
+    "firebase_url": "https://inngagedemofcm.firebaseio.com",
+    "project_id": "inngagedemofcm",
+    "storage_bucket": "inngagedemofcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838355191326:android:fc62e07983d618bf",
+        "android_client_info": {
+          "package_name": "sample.inngage.com.br.inngagefcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "838355191326-b5drmi3jdl4ig3rfh6dkheb4gf5cpd3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhsMJ0iUz38IrtAop-H7h-q3tJwJS-W6k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
