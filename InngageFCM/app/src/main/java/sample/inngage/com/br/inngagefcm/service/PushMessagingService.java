@@ -43,20 +43,8 @@ public class PushMessagingService extends FirebaseMessagingService {
 
         if (remoteMessage.getData().size() > 0) {
 
-            //jsonObject = new JSONObject();
+           
             jsonObject = parseRemoteMessageToJson(remoteMessage);
-
-            /*try {
-                Log.d("notId =>:", object.getString("notId"));
-            } catch (JSONException e) {
-                Log.e(TAG, "Error parsing notification to JSON");
-            }*/
-
-            //body = remoteMessage.getNotification().getBody();
-            //title = remoteMessage.getNotification().getTitle();
-            //Log.d(TAG, "Notification received, title: " + title + "\n body: " + body);
-            //Log.d(TAG, "Notification received" + remoteMessage.getData());
-            //showNotification(title, body);
             showNotification(jsonObject);
         }
     }
@@ -106,11 +94,7 @@ public class PushMessagingService extends FirebaseMessagingService {
 
         Log.d(TAG, "Showing push notification");
 
-        //Intent intent = new Intent(this, MainActivity.class);
-        //intent.putExtra("body", body);
-        //intent.putExtra("title", title);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
         PendingIntent pendingIntent =
                 PendingIntent.getActivity(this, 0,
                         intent,
